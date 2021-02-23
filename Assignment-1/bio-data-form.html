@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioData Form</title>
+</head>
+<body>
+    <h1>My Bio Data</h1>
+    <!-- Personal Information -->
+    <fieldset>
+        <!-- Heading for filedset can be set by using <legend> tag -->
+        <legend>Personal Information</legend>
+        <form action="#" method="GET">
+            <p>
+            <label for="username">FirstName: <input type="text" name="firstName" id="firstName" placeholder="First Name" required></label>
+            <label for="username">LastName: <input type="text" name="lastName" id="lastName" placeholder="Last Name" required></label>
+            </p>
+            <!-- Radio button for selecting Gender -->
+            <p>
+            <label for="gender">Male: <input type="radio" name="gender" id="male" value="male"></label>
+            <label for="gender">Female: <input type="radio" name="gender" id="female" value="female"></label>
+            <label for="gender">Others: <input type="radio" name="gender" id="others" value="others"></label></p>
+
+            <!-- Date of Birth -->
+            <p><label for="dob">Date of Birth: <input type="date", name="dob" required></label></p>
+            <!-- Email, Phone, Height -->
+            <p><label for="email">E-mail: <input type="text" id="email" placeholder="Enter your email" required></label></p>
+            <p><label for="phone">Phone: <input type="text"  id="phone" placeholder="+91" required></label></p>
+            <p><label for="height">Height: <input type="text" id="height" placeholder="Height in feet" required></label></p>
+        </form>
+    </fieldset>
+
+    <!-- Education information -->
+    <fieldset>
+        <legend>Education</legend>
+        <p><label for="school">School Name: <input type="text" name="school" placeholder="School Name"></label></p>
+        <p><label for="class">Class: <input type="text" name="class" placeholder="Enter Class"></label></p>
+        <p><label for="stream">Stream: <select name="stream" id="stream">
+            <option value="stream">Stream</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+            <option value="science">Science</option>
+        </select></p>
+        <p><label for="marksheet">Marksheet: <input type="file" name="marksheet" id="marksheet"></label></p>
+    </fieldset>
+    <!-- Submit Button -->
+    <p><input type="submit" value="Submit"></p>
+</body>
+</html>
